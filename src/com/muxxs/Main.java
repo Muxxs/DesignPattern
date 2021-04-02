@@ -9,7 +9,18 @@ package com.muxxs;
 public class Main {
     public static void main(String[] args) {
 	// write your code here
+        // 简单工厂
         Computer C = EasyFactory.createComputer("hp");
         C.start();
+        C.end();
+
+        // 单例模式
+        Singleton S = Singleton.getInstance();
+        S.end();
+        LazySingleton LS = LazySingleton.getInstance();
+        LS.end();
+
+
+
     }
 }
